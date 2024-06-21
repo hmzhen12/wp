@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  background-image: url("yozora.jpeg");
+  background-size: cover;
+  padding: 100px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ウェブサイトへようこそ！</h1>
+</div>
+
+<div class="topnav">
+  <a href="https://www.instagram.com/fwidiatno" class="contact-link">Instagram</a>
+  <a href="https://x.com/alretta_" class="contact-link">Twitter</a>
+  <a href="https://github.com/hmzhen12" class="contact-link">Github</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <img src="meng.jpg" alt="" width="150"><br>
+    <h2>FELYCIA</h2>
+    <h2>WIDIATNO</h2>
+  </div>
+  
+  <div class="column middle">
+    <h2>Hello World!</h2>
+    <p> I'm currently majoring Computer Science at National Quemoy University. I'm from Jakarta, Indonesia.</p>
+    <p> I'm really loving to watch movies, photography and travelling</p>
+
+    
+  </div>
+  
+  <div class="column side">
+    <h2>Quote</h2>
+    <p>“貴方にできるのは自分の目的のために行動することまでで、その結果を望むようにすることはできない。"</p>
+  </div>
+</div>
+  
+</body>
+</html>
+
+
